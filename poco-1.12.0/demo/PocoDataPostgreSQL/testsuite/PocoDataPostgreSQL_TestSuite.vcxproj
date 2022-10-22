@@ -68,7 +68,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>CppUnit.lib;iphlpapi.lib;ws2_32.lib;Secur32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>CppUnit.lib;iphlpapi.lib;ws2_32.lib;Secur32.lib;Shell32.lib;Advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -98,7 +98,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>CppUnit.lib;iphlpapi.lib;ws2_32.lib;Secur32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>CppUnit.lib;iphlpapi.lib;ws2_32.lib;Secur32.lib;Shell32.lib;Advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>

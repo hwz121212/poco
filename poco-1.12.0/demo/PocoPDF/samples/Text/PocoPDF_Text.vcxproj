@@ -64,7 +64,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -83,7 +83,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

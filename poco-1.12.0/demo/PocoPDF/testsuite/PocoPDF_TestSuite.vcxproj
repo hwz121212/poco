@@ -53,7 +53,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WINVER=0x0600;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -84,7 +84,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;WINVER=0x0600;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>

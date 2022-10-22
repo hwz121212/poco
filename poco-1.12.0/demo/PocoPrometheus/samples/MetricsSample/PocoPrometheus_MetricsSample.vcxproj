@@ -64,7 +64,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPrometheus\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoNet\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\zlib-1.2.12;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPrometheus\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoNet\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\zlib-1.2.12\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -83,7 +83,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPrometheus\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoNet\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\zlib-1.2.12;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPrometheus\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoNet\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\zlib-1.2.12\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

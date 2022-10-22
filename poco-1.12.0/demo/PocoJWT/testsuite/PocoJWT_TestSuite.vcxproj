@@ -11,10 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    
     <ProjectGuid>{96CF3103-E49E-3F5E-A11D-6DBCDA043053}</ProjectGuid>
     <RootNamespace>TestSuite</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -52,7 +52,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoJSON\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\openssl-1.0.1g\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\PocoJWT\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoJSON\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\PocoJWT\include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WINVER=0x0600;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -83,7 +83,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoJSON\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\openssl-1.0.1g\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\PocoJWT\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoJSON\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\PocoJWT\include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;WINVER=0x0600;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>

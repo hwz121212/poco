@@ -48,7 +48,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12;..\TestLibrary;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12\include;..\TestLibrary;</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -76,7 +76,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12;..\TestLibrary;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12\include;..\TestLibrary;</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
