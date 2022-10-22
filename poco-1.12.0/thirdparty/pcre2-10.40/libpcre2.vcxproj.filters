@@ -84,10 +84,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pcre2.h">
+    <ClInclude Include="include\pcre2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="config.h">
+    <ClInclude Include="include\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
