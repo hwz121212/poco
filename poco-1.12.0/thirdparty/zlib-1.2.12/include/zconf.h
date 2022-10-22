@@ -336,7 +336,7 @@
     */
 #  ifdef ZLIB_DLL
 #    if defined(WIN32) && (!defined(__BORLANDC__) || (__BORLANDC__ >= 0x500))
-#      ifdef ZLIB_INTERNAL
+#      ifdef ZLIB_BUILDING
 #        define ZEXTERN extern __declspec(dllexport)
 #      else
 #        define ZEXTERN extern __declspec(dllimport)
