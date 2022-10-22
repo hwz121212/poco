@@ -53,8 +53,8 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;PDF_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;PDF_EXPORTS;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -75,7 +75,7 @@
       <SubSystem>Console</SubSystem>
       <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
-      <AdditionalDependencies>libhpdf.lib;libzlib.lib;libpng.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libhpdf.lib;libzlib.lib;libpng.lib;</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -85,8 +85,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;PDF_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;PDF_EXPORTS;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -108,7 +108,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
-      <AdditionalDependencies>libhpdf.lib;libzlib.lib;libpng.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libhpdf.lib;libzlib.lib;libpng.lib;</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -53,8 +53,8 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WINVER=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WINVER=0x0600;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -69,7 +69,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>CppUnit.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>CppUnit.lib;iphlpapi.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -84,8 +84,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;WINVER=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoPDF\include;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\CppUnit\include;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\png1637;$(SolutionDir)thirdparty\haru-2.3.0\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;WINVER=0x0600;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -99,7 +99,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>CppUnit.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>CppUnit.lib;iphlpapi.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
