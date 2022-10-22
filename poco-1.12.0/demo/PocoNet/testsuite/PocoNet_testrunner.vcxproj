@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7CDBED2D-0199-3D9A-84BC-41594CC32A71}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoNet\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\CppUnit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>PocoNet.lib;PocoUtil.lib;PocoXML.lib;CppUnit.lib;iphlpapi.lib;ws2_32.lib;PocoJSON.lib;PocoFoundation.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoNet\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\CppUnit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>PocoNet.lib;PocoUtil.lib;PocoXML.lib;CppUnit.lib;iphlpapi.lib;ws2_32.lib;PocoJSON.lib;PocoFoundation.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\DNSTest.cpp" />
+    <ClCompile Include="src\DatagramSocketTest.cpp" />
+    <ClCompile Include="src\DialogServer.cpp" />
+    <ClCompile Include="src\DialogSocketTest.cpp" />
+    <ClCompile Include="src\Driver.cpp" />
+    <ClCompile Include="src\EchoServer.cpp" />
+    <ClCompile Include="src\FTPClientSessionTest.cpp" />
+    <ClCompile Include="src\FTPClientTestSuite.cpp" />
+    <ClCompile Include="src\FTPStreamFactoryTest.cpp" />
+    <ClCompile Include="src\HTMLFormTest.cpp" />
+    <ClCompile Include="src\HTMLTestSuite.cpp" />
+    <ClCompile Include="src\HTTPClientSessionTest.cpp" />
+    <ClCompile Include="src\HTTPClientTestSuite.cpp" />
+    <ClCompile Include="src\HTTPCookieTest.cpp" />
+    <ClCompile Include="src\HTTPCredentialsTest.cpp" />
+    <ClCompile Include="src\HTTPRequestTest.cpp" />
+    <ClCompile Include="src\HTTPResponseTest.cpp" />
+    <ClCompile Include="src\HTTPServerTest.cpp" />
+    <ClCompile Include="src\HTTPServerTestSuite.cpp" />
+    <ClCompile Include="src\HTTPStreamFactoryTest.cpp" />
+    <ClCompile Include="src\HTTPTestServer.cpp" />
+    <ClCompile Include="src\HTTPTestSuite.cpp" />
+    <ClCompile Include="src\ICMPClientTest.cpp" />
+    <ClCompile Include="src\ICMPClientTestSuite.cpp" />
+    <ClCompile Include="src\ICMPSocketTest.cpp" />
+    <ClCompile Include="src\IPAddressTest.cpp" />
+    <ClCompile Include="src\MailMessageTest.cpp" />
+    <ClCompile Include="src\MailStreamTest.cpp" />
+    <ClCompile Include="src\MailTestSuite.cpp" />
+    <ClCompile Include="src\MediaTypeTest.cpp" />
+    <ClCompile Include="src\MessageHeaderTest.cpp" />
+    <ClCompile Include="src\MessagesTestSuite.cpp" />
+    <ClCompile Include="src\MulticastEchoServer.cpp" />
+    <ClCompile Include="src\MulticastSocketTest.cpp" />
+    <ClCompile Include="src\MultipartReaderTest.cpp" />
+    <ClCompile Include="src\MultipartWriterTest.cpp" />
+    <ClCompile Include="src\NTLMCredentialsTest.cpp" />
+    <ClCompile Include="src\NTPClientTest.cpp" />
+    <ClCompile Include="src\NTPClientTestSuite.cpp" />
+    <ClCompile Include="src\NameValueCollectionTest.cpp" />
+    <ClCompile Include="src\NetCoreTestSuite.cpp" />
+    <ClCompile Include="src\NetTestSuite.cpp" />
+    <ClCompile Include="src\NetworkInterfaceTest.cpp" />
+    <ClCompile Include="src\OAuth10CredentialsTest.cpp" />
+    <ClCompile Include="src\OAuth20CredentialsTest.cpp" />
+    <ClCompile Include="src\OAuthTestSuite.cpp" />
+    <ClCompile Include="src\POP3ClientSessionTest.cpp" />
+    <ClCompile Include="src\PollSetTest.cpp" />
+    <ClCompile Include="src\QuotedPrintableTest.cpp" />
+    <ClCompile Include="src\RawSocketTest.cpp" />
+    <ClCompile Include="src\ReactorTestSuite.cpp" />
+    <ClCompile Include="src\SMTPClientSessionTest.cpp" />
+    <ClCompile Include="src\SocketAddressTest.cpp" />
+    <ClCompile Include="src\SocketConnectorTest.cpp" />
+    <ClCompile Include="src\SocketProactorTest.cpp" />
+    <ClCompile Include="src\SocketReactorTest.cpp" />
+    <ClCompile Include="src\SocketStreamTest.cpp" />
+    <ClCompile Include="src\SocketTest.cpp" />
+    <ClCompile Include="src\SocketsTestSuite.cpp" />
+    <ClCompile Include="src\SyslogTest.cpp" />
+    <ClCompile Include="src\TCPServerTest.cpp" />
+    <ClCompile Include="src\TCPServerTestSuite.cpp" />
+    <ClCompile Include="src\UDPEchoServer.cpp" />
+    <ClCompile Include="src\UDPServerTest.cpp" />
+    <ClCompile Include="src\UDPServerTestSuite.cpp" />
+    <ClCompile Include="src\WebSocketTest.cpp" />
+    <ClCompile Include="src\WebSocketTestSuite.cpp" />
+    <ClInclude Include="src\WinCEDriver.cpp" />
+    <ClInclude Include="src\WinDriver.cpp" />
+    <ClInclude Include="src\DNSTest.h" />
+    <ClInclude Include="src\DatagramSocketTest.h" />
+    <ClInclude Include="src\DialogServer.h" />
+    <ClInclude Include="src\DialogSocketTest.h" />
+    <ClInclude Include="src\EchoServer.h" />
+    <ClInclude Include="src\FTPClientSessionTest.h" />
+    <ClInclude Include="src\FTPClientTestSuite.h" />
+    <ClInclude Include="src\FTPStreamFactoryTest.h" />
+    <ClInclude Include="src\HTMLFormTest.h" />
+    <ClInclude Include="src\HTMLTestSuite.h" />
+    <ClInclude Include="src\HTTPClientSessionTest.h" />
+    <ClInclude Include="src\HTTPClientTestSuite.h" />
+    <ClInclude Include="src\HTTPCookieTest.h" />
+    <ClInclude Include="src\HTTPCredentialsTest.h" />
+    <ClInclude Include="src\HTTPRequestTest.h" />
+    <ClInclude Include="src\HTTPResponseTest.h" />
+    <ClInclude Include="src\HTTPServerTest.h" />
+    <ClInclude Include="src\HTTPServerTestSuite.h" />
+    <ClInclude Include="src\HTTPStreamFactoryTest.h" />
+    <ClInclude Include="src\HTTPTestServer.h" />
+    <ClInclude Include="src\HTTPTestSuite.h" />
+    <ClInclude Include="src\ICMPClientTest.h" />
+    <ClInclude Include="src\ICMPClientTestSuite.h" />
+    <ClInclude Include="src\ICMPSocketTest.h" />
+    <ClInclude Include="src\IPAddressTest.h" />
+    <ClInclude Include="src\MailMessageTest.h" />
+    <ClInclude Include="src\MailStreamTest.h" />
+    <ClInclude Include="src\MailTestSuite.h" />
+    <ClInclude Include="src\MediaTypeTest.h" />
+    <ClInclude Include="src\MessageHeaderTest.h" />
+    <ClInclude Include="src\MessagesTestSuite.h" />
+    <ClInclude Include="src\MulticastEchoServer.h" />
+    <ClInclude Include="src\MulticastSocketTest.h" />
+    <ClInclude Include="src\MultipartReaderTest.h" />
+    <ClInclude Include="src\MultipartWriterTest.h" />
+    <ClInclude Include="src\NTLMCredentialsTest.h" />
+    <ClInclude Include="src\NTPClientTest.h" />
+    <ClInclude Include="src\NTPClientTestSuite.h" />
+    <ClInclude Include="src\NameValueCollectionTest.h" />
+    <ClInclude Include="src\NetCoreTestSuite.h" />
+    <ClInclude Include="src\NetTestSuite.h" />
+    <ClInclude Include="src\NetworkInterfaceTest.h" />
+    <ClInclude Include="src\OAuth10CredentialsTest.h" />
+    <ClInclude Include="src\OAuth20CredentialsTest.h" />
+    <ClInclude Include="src\OAuthTestSuite.h" />
+    <ClInclude Include="src\POP3ClientSessionTest.h" />
+    <ClInclude Include="src\PollSetTest.h" />
+    <ClInclude Include="src\QuotedPrintableTest.h" />
+    <ClInclude Include="src\RawSocketTest.h" />
+    <ClInclude Include="src\ReactorTestSuite.h" />
+    <ClInclude Include="src\SMTPClientSessionTest.h" />
+    <ClInclude Include="src\SocketAddressTest.h" />
+    <ClInclude Include="src\SocketConnectorTest.h" />
+    <ClInclude Include="src\SocketProactorTest.h" />
+    <ClInclude Include="src\SocketReactorTest.h" />
+    <ClInclude Include="src\SocketStreamTest.h" />
+    <ClInclude Include="src\SocketTest.h" />
+    <ClInclude Include="src\SocketsTestSuite.h" />
+    <ClInclude Include="src\SyslogTest.h" />
+    <ClInclude Include="src\TCPServerTest.h" />
+    <ClInclude Include="src\TCPServerTestSuite.h" />
+    <ClInclude Include="src\UDPEchoServer.h" />
+    <ClInclude Include="src\UDPServerTest.h" />
+    <ClInclude Include="src\UDPServerTestSuite.h" />
+    <ClInclude Include="src\WebSocketTest.h" />
+    <ClInclude Include="src\WebSocketTestSuite.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

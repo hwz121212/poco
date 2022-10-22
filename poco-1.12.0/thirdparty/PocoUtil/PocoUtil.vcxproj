@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5376069E-CD3C-3E26-BDC9-CC9A7C44F335}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>PocoUtil</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;src;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\PocoJSON\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD;Util_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD;Util_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>PocoXML.lib;PocoJSON.lib;PocoFoundation.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;src;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\PocoJSON\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD;Util_EXPORTS</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD;Util_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>PocoXML.lib;PocoJSON.lib;PocoFoundation.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AbstractConfiguration.cpp" />
+    <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\ConfigurationMapper.cpp" />
+    <ClCompile Include="src\ConfigurationView.cpp" />
+    <ClCompile Include="src\FilesystemConfiguration.cpp" />
+    <ClCompile Include="src\HelpFormatter.cpp" />
+    <ClCompile Include="src\IniFileConfiguration.cpp" />
+    <ClCompile Include="src\IntValidator.cpp" />
+    <ClCompile Include="src\JSONConfiguration.cpp" />
+    <ClCompile Include="src\LayeredConfiguration.cpp" />
+    <ClCompile Include="src\LocalConfigurationView.cpp" />
+    <ClCompile Include="src\LoggingConfigurator.cpp" />
+    <ClCompile Include="src\LoggingSubsystem.cpp" />
+    <ClCompile Include="src\MapConfiguration.cpp" />
+    <ClCompile Include="src\Option.cpp" />
+    <ClCompile Include="src\OptionCallback.cpp" />
+    <ClCompile Include="src\OptionException.cpp" />
+    <ClCompile Include="src\OptionProcessor.cpp" />
+    <ClCompile Include="src\OptionSet.cpp" />
+    <ClCompile Include="src\PropertyFileConfiguration.cpp" />
+    <ClCompile Include="src\RegExpValidator.cpp" />
+    <ClCompile Include="src\ServerApplication.cpp" />
+    <ClCompile Include="src\Subsystem.cpp" />
+    <ClCompile Include="src\SystemConfiguration.cpp" />
+    <ClCompile Include="src\Timer.cpp" />
+    <ClCompile Include="src\TimerTask.cpp" />
+    <ClCompile Include="src\Validator.cpp" />
+    <ClCompile Include="src\WinRegistryConfiguration.cpp" />
+    <ClCompile Include="src\WinRegistryKey.cpp" />
+    <ClCompile Include="src\WinService.cpp" />
+    <ClCompile Include="src\XMLConfiguration.cpp" />
+    <ClInclude Include="include\Poco\Util\AbstractConfiguration.h" />
+    <ClInclude Include="include\Poco\Util\Application.h" />
+    <ClInclude Include="include\Poco\Util\ConfigurationMapper.h" />
+    <ClInclude Include="include\Poco\Util\ConfigurationView.h" />
+    <ClInclude Include="include\Poco\Util\FilesystemConfiguration.h" />
+    <ClInclude Include="include\Poco\Util\HelpFormatter.h" />
+    <ClInclude Include="include\Poco\Util\IniFileConfiguration.h" />
+    <ClInclude Include="include\Poco\Util\IntValidator.h" />
+    <ClInclude Include="include\Poco\Util\JSONConfiguration.h" />
+    <ClInclude Include="include\Poco\Util\LayeredConfiguration.h" />
+    <ClInclude Include="include\Poco\Util\LocalConfigurationView.h" />
+    <ClInclude Include="include\Poco\Util\LoggingConfigurator.h" />
+    <ClInclude Include="include\Poco\Util\LoggingSubsystem.h" />
+    <ClInclude Include="include\Poco\Util\MapConfiguration.h" />
+    <ClInclude Include="include\Poco\Util\Option.h" />
+    <ClInclude Include="include\Poco\Util\OptionCallback.h" />
+    <ClInclude Include="include\Poco\Util\OptionException.h" />
+    <ClInclude Include="include\Poco\Util\OptionProcessor.h" />
+    <ClInclude Include="include\Poco\Util\OptionSet.h" />
+    <ClInclude Include="include\Poco\Util\PropertyFileConfiguration.h" />
+    <ClInclude Include="include\Poco\Util\RegExpValidator.h" />
+    <ClInclude Include="include\Poco\Util\ServerApplication.h" />
+    <ClInclude Include="include\Poco\Util\Subsystem.h" />
+    <ClInclude Include="include\Poco\Util\SystemConfiguration.h" />
+    <ClInclude Include="include\Poco\Util\Timer.h" />
+    <ClInclude Include="include\Poco\Util\TimerTask.h" />
+    <ClInclude Include="include\Poco\Util\TimerTaskAdapter.h" />
+    <ClInclude Include="include\Poco\Util\Units.h" />
+    <ClInclude Include="include\Poco\Util\Util.h" />
+    <ClInclude Include="include\Poco\Util\Validator.h" />
+    <ClInclude Include="include\Poco\Util\WinRegistryConfiguration.h" />
+    <ClInclude Include="include\Poco\Util\WinRegistryKey.h" />
+    <ClInclude Include="include\Poco\Util\WinService.h" />
+    <ClInclude Include="include\Poco\Util\XMLConfiguration.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

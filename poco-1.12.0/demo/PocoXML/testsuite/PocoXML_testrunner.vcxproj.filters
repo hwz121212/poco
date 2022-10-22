@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\AttributesImplTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ChildNodesTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DOMTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DocumentTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DocumentTypeTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Driver.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ElementTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EventTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NamePoolTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NameTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NamespaceSupportTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NodeAppenderTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NodeIteratorTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NodeTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParserWriterTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SAXParserTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SAXTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TreeWalkerTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XMLStreamParserTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XMLTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XMLWriterTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\WinCEDriver.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WinDriver.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AttributesImplTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ChildNodesTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DOMTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DocumentTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DocumentTypeTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ElementTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NamePoolTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NameTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NamespaceSupportTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NodeAppenderTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NodeIteratorTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NodeTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ParserWriterTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SAXParserTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SAXTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TreeWalkerTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\XMLStreamParserTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\XMLTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\XMLWriterTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Filter Include="Unknown">
+      <UniqueIdentifier>{957391BB-B359-3A4C-BE8B-3245409CDCBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unknown\Header Files">
+      <UniqueIdentifier>{C7A51AF3-5E63-3524-A5D9-BD23CBE6FFCD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unknown\Source Files">
+      <UniqueIdentifier>{E84E5699-6FD7-3DB8-9E41-F9B24643C0BD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

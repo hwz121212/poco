@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\DNSTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DatagramSocketTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DialogServer.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DialogSocketTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Driver.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EchoServer.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FTPClientSessionTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FTPClientTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FTPStreamFactoryTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTMLFormTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTMLTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPClientSessionTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPClientTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPCookieTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPCredentialsTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPRequestTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPResponseTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPServerTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPServerTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPStreamFactoryTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPTestServer.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ICMPClientTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ICMPClientTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ICMPSocketTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IPAddressTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MailMessageTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MailStreamTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MailTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MediaTypeTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MessageHeaderTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MessagesTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulticastEchoServer.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulticastSocketTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MultipartReaderTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MultipartWriterTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NTLMCredentialsTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NTPClientTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NTPClientTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NameValueCollectionTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetCoreTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetworkInterfaceTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OAuth10CredentialsTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OAuth20CredentialsTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OAuthTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\POP3ClientSessionTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PollSetTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\QuotedPrintableTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RawSocketTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ReactorTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SMTPClientSessionTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SocketAddressTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SocketConnectorTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SocketProactorTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SocketReactorTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SocketStreamTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SocketTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SocketsTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SyslogTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TCPServerTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TCPServerTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UDPEchoServer.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UDPServerTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UDPServerTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WebSocketTest.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WebSocketTestSuite.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\WinCEDriver.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WinDriver.cpp">
+      <Filter>Unknown\Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DNSTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DatagramSocketTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogServer.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DialogSocketTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EchoServer.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FTPClientSessionTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FTPClientTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FTPStreamFactoryTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTMLFormTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTMLTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPClientSessionTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPClientTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPCookieTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPCredentialsTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPRequestTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPResponseTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPServerTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPServerTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPStreamFactoryTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPTestServer.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ICMPClientTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ICMPClientTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ICMPSocketTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IPAddressTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MailMessageTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MailStreamTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MailTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MediaTypeTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MessageHeaderTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MessagesTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MulticastEchoServer.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MulticastSocketTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MultipartReaderTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MultipartWriterTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NTLMCredentialsTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NTPClientTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NTPClientTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NameValueCollectionTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetCoreTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NetworkInterfaceTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OAuth10CredentialsTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OAuth20CredentialsTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OAuthTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\POP3ClientSessionTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PollSetTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\QuotedPrintableTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RawSocketTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ReactorTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SMTPClientSessionTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SocketAddressTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SocketConnectorTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SocketProactorTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SocketReactorTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SocketStreamTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SocketTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SocketsTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SyslogTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TCPServerTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TCPServerTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UDPEchoServer.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UDPServerTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UDPServerTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WebSocketTest.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WebSocketTestSuite.h">
+      <Filter>Unknown\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Filter Include="Unknown">
+      <UniqueIdentifier>{957391BB-B359-3A4C-BE8B-3245409CDCBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unknown\Header Files">
+      <UniqueIdentifier>{C7A51AF3-5E63-3524-A5D9-BD23CBE6FFCD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unknown\Source Files">
+      <UniqueIdentifier>{E84E5699-6FD7-3DB8-9E41-F9B24643C0BD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

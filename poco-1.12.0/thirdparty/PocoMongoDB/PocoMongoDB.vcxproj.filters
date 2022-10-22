@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Array.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Binary.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Connection.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cursor.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Database.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DeleteRequest.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Document.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Element.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GetMoreRequest.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InsertRequest.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\JavaScriptCode.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KillCursorsRequest.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Message.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MessageHeader.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectId.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\QueryRequest.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RegularExpression.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ReplicaSet.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RequestMessage.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResponseMessage.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UpdateRequest.cpp">
+      <Filter>MongoDB\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Poco\MongoDB\Array.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\BSONReader.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\BSONWriter.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\Binary.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\Connection.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\Cursor.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\Database.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\DeleteRequest.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\Document.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\Element.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\GetMoreRequest.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\InsertRequest.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\JavaScriptCode.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\KillCursorsRequest.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\Message.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\MessageHeader.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\MongoDB.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\ObjectId.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\PoolableConnectionFactory.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\QueryRequest.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\RegularExpression.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\ReplicaSet.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\RequestMessage.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\ResponseMessage.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Poco\MongoDB\UpdateRequest.h">
+      <Filter>MongoDB\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Filter Include="MongoDB">
+      <UniqueIdentifier>{DC988E2D-CE1F-3D89-862C-CA1F81548D3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MongoDB\Header Files">
+      <UniqueIdentifier>{5467D69E-19E2-3B71-B26D-AB6361E3C785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MongoDB\Source Files">
+      <UniqueIdentifier>{0E85984A-12EA-391E-A250-92F5F0F63C8D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{760FA082-1D75-38ED-815E-70391D685749}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

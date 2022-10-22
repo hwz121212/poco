@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4AAC6482-0446-32CE-A100-498E552FB231}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoJSON\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\CppUnit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>PocoUtil.lib;PocoJSON.lib;PocoXML.lib;CppUnit.lib;PocoFoundation.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\PocoJSON\include;$(SolutionDir)thirdparty\PocoXML\include;$(SolutionDir)thirdparty\CppUnit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;UNICODE;_UNICODE;XML_STATIC;XML_DTD</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>PocoUtil.lib;PocoJSON.lib;PocoXML.lib;CppUnit.lib;PocoFoundation.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AbstractConfigurationTest.cpp" />
+    <ClCompile Include="src\ConfigurationMapperTest.cpp" />
+    <ClCompile Include="src\ConfigurationTestSuite.cpp" />
+    <ClCompile Include="src\ConfigurationViewTest.cpp" />
+    <ClCompile Include="src\Driver.cpp" />
+    <ClCompile Include="src\FilesystemConfigurationTest.cpp" />
+    <ClCompile Include="src\HelpFormatterTest.cpp" />
+    <ClCompile Include="src\IniFileConfigurationTest.cpp" />
+    <ClCompile Include="src\JSONConfigurationTest.cpp" />
+    <ClCompile Include="src\LayeredConfigurationTest.cpp" />
+    <ClCompile Include="src\LocalConfigurationViewTest.cpp" />
+    <ClCompile Include="src\LoggingConfiguratorTest.cpp" />
+    <ClCompile Include="src\MapConfigurationTest.cpp" />
+    <ClCompile Include="src\OptionProcessorTest.cpp" />
+    <ClCompile Include="src\OptionSetTest.cpp" />
+    <ClCompile Include="src\OptionTest.cpp" />
+    <ClCompile Include="src\OptionsTestSuite.cpp" />
+    <ClCompile Include="src\PropertyFileConfigurationTest.cpp" />
+    <ClCompile Include="src\SystemConfigurationTest.cpp" />
+    <ClCompile Include="src\TimerTest.cpp" />
+    <ClCompile Include="src\TimerTestSuite.cpp" />
+    <ClCompile Include="src\UtilTestSuite.cpp" />
+    <ClCompile Include="src\ValidatorTest.cpp" />
+    <ClInclude Include="src\WinCEDriver.cpp" />
+    <ClCompile Include="src\WinConfigurationTest.cpp" />
+    <ClInclude Include="src\WinDriver.cpp" />
+    <ClCompile Include="src\WinRegistryTest.cpp" />
+    <ClCompile Include="src\WinServiceTest.cpp" />
+    <ClCompile Include="src\WindowsTestSuite.cpp" />
+    <ClCompile Include="src\XMLConfigurationTest.cpp" />
+    <ClInclude Include="src\AbstractConfigurationTest.h" />
+    <ClInclude Include="src\ConfigurationMapperTest.h" />
+    <ClInclude Include="src\ConfigurationTestSuite.h" />
+    <ClInclude Include="src\ConfigurationViewTest.h" />
+    <ClInclude Include="src\FilesystemConfigurationTest.h" />
+    <ClInclude Include="src\HelpFormatterTest.h" />
+    <ClInclude Include="src\IniFileConfigurationTest.h" />
+    <ClInclude Include="src\JSONConfigurationTest.h" />
+    <ClInclude Include="src\LayeredConfigurationTest.h" />
+    <ClInclude Include="src\LocalConfigurationViewTest.h" />
+    <ClInclude Include="src\LoggingConfiguratorTest.h" />
+    <ClInclude Include="src\MapConfigurationTest.h" />
+    <ClInclude Include="src\OptionProcessorTest.h" />
+    <ClInclude Include="src\OptionSetTest.h" />
+    <ClInclude Include="src\OptionTest.h" />
+    <ClInclude Include="src\OptionsTestSuite.h" />
+    <ClInclude Include="src\PropertyFileConfigurationTest.h" />
+    <ClInclude Include="src\SystemConfigurationTest.h" />
+    <ClInclude Include="src\TimerTest.h" />
+    <ClInclude Include="src\TimerTestSuite.h" />
+    <ClInclude Include="src\UtilTestSuite.h" />
+    <ClInclude Include="src\ValidatorTest.h" />
+    <ClInclude Include="src\WinConfigurationTest.h" />
+    <ClInclude Include="src\WinRegistryTest.h" />
+    <ClInclude Include="src\WinServiceTest.h" />
+    <ClInclude Include="src\WindowsTestSuite.h" />
+    <ClInclude Include="src\XMLConfigurationTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
