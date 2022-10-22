@@ -383,10 +383,16 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PocoPDF_TestSuite", "demo\PocoPDF\testsuite\PocoPDF_TestSuite.vcxproj", "{24134877-368D-11DB-9FBC-00123FC423B5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PocoDoc", "thirdparty\PocoDoc\PocoDoc.vcxproj", "{18BCF3CC-9474-4D1C-9445-F783A49D886B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BBA460AC-FE5C-38EC-97BD-6D36D447310A} = {BBA460AC-FE5C-38EC-97BD-6D36D447310A}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_exe", "2_exe", "{AA0286AB-1E5C-4C2E-9183-68AE52FCA94E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProGen", "thirdparty\ProGen\ProGen.vcxproj", "{48D690D9-6520-4F30-A298-3132548716D0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BBA460AC-FE5C-38EC-97BD-6D36D447310A} = {BBA460AC-FE5C-38EC-97BD-6D36D447310A}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PageCompiler", "thirdparty\PageCompiler\PageCompiler.vcxproj", "{B99D1D1D-6DD3-3817-9646-99A3D910E188}"
 	ProjectSection(ProjectDependencies) = postProject
