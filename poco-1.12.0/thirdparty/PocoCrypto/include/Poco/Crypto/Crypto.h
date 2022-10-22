@@ -138,8 +138,8 @@ enum RSAPaddingMode
 			#if POCO_EXTERNAL_OPENSSL == POCO_EXTERNAL_OPENSSL_SLPRO
 				#if defined(POCO_DLL)
 					#if OPENSSL_VERSION_PREREQ(1,1)
-						#pragma comment(lib, "libcrypto.lib")
-						#pragma comment(lib, "libssl.lib")
+						#pragma comment(lib, "libeay32.lib")
+						#pragma comment(lib, "libssleay32.lib")
 					#else
 						#pragma comment(lib, "libeay32.lib")
 						#pragma comment(lib, "libssleay32.lib")

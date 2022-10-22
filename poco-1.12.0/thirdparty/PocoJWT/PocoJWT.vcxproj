@@ -53,7 +53,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>include;src;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoJSON\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\openssl-1.0.1g\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;src;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoJSON\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;JWT_EXPORTS;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -84,7 +84,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>include;src;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoJSON\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\openssl-1.0.1g\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;src;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoJSON\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;JWT_EXPORTS;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>

@@ -53,7 +53,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>include;src;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoNet\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\openssl-1.0.1g\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;src;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoNet\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NetSSL_EXPORTS;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -69,7 +69,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libeay32.lib;libssleay32.lib;ws2_32.lib;iphlpapi.lib;</AdditionalDependencies>
+      <AdditionalDependencies>libeay32.lib;libssleay32.lib;ws2_32.lib;iphlpapi.lib;Advapi32.lib;User32.lib</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
@@ -85,7 +85,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>include;src;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoNet\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\openssl-1.0.1g\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;src;$(SolutionDir)thirdparty\PocoFoundation\include;$(SolutionDir)thirdparty\PocoNet\include;$(SolutionDir)thirdparty\PocoCrypto\include;$(SolutionDir)thirdparty\PocoUtil\include;$(SolutionDir)thirdparty\openssl-1.1.1q\include;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NetSSL_EXPORTS;</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -100,7 +100,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libeay32.lib;libssleay32.lib;ws2_32.lib;iphlpapi.lib;</AdditionalDependencies>
+      <AdditionalDependencies>libeay32.lib;libssleay32.lib;ws2_32.lib;iphlpapi.lib;Advapi32.lib;User32.lib</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>

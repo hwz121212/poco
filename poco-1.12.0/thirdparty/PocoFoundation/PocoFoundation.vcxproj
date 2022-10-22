@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;include;src;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\pcre2-10.40\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;include;src;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\pcre2-10.40\include;</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -78,7 +78,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;include;src;$(SolutionDir)thirdparty\zlib-1.2.12;$(SolutionDir)thirdparty\pcre2-10.40\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;include;src;$(SolutionDir)thirdparty\zlib-1.2.12\include;$(SolutionDir)thirdparty\pcre2-10.40\include;</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
