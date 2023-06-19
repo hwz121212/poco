@@ -69,7 +69,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libeay32.lib;libssleay32.lib;ws2_32.lib;iphlpapi.lib;Advapi32.lib;User32.lib</AdditionalDependencies>
+      <AdditionalDependencies>libopenssl.lib;ws2_32.lib;iphlpapi.lib;Advapi32.lib;User32.lib</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
@@ -100,7 +100,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libeay32.lib;libssleay32.lib;ws2_32.lib;iphlpapi.lib;Advapi32.lib;User32.lib</AdditionalDependencies>
+      <AdditionalDependencies>libopenssl.lib;ws2_32.lib;iphlpapi.lib;Advapi32.lib;User32.lib</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>

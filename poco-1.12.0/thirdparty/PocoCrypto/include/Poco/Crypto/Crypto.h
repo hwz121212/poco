@@ -137,13 +137,7 @@ enum RSAPaddingMode
 		#elif defined(POCO_EXTERNAL_OPENSSL)
 			#if POCO_EXTERNAL_OPENSSL == POCO_EXTERNAL_OPENSSL_SLPRO
 				#if defined(POCO_DLL)
-					#if OPENSSL_VERSION_PREREQ(1,1)
-						#pragma comment(lib, "libeay32.lib")
-						#pragma comment(lib, "libssleay32.lib")
-					#else
-						#pragma comment(lib, "libeay32.lib")
-						#pragma comment(lib, "libssleay32.lib")
-					#endif
+					#pragma comment(lib, "libopenssl.lib")
 			  	#else
 					#if OPENSSL_VERSION_PREREQ(1,1)
 						#if defined(_WIN64)
@@ -159,13 +153,7 @@ enum RSAPaddingMode
 					#endif
 				#endif
 			#elif POCO_EXTERNAL_OPENSSL == POCO_EXTERNAL_OPENSSL_DEFAULT
-				#if OPENSSL_VERSION_PREREQ(1,1)
-					#pragma comment(lib, "libcrypto.lib")
-					#pragma comment(lib, "libssl.lib")
-				#else
-					#pragma comment(lib, "libeay32.lib")
-					#pragma comment(lib, "ssleay32.lib")
-				#endif
+				#pragma comment(lib, "libopenssl.lib")
 			#endif
 		#endif // POCO_INTERNAL_OPENSSL_MSVC_VER
 		#if !defined(Crypto_EXPORTS)
